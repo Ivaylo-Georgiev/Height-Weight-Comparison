@@ -5,7 +5,7 @@ height_data <- data[,2]
 weight_data <- data[,3]
 
 boxplot(weight_data ~ gender_data, main="Weight-Gender", 
-        xlab="Gender (0 - Male, 1 - Female)", ylab="Weight (in pounds)", col=(c("pink","lightblue")))
+        xlab="Gender (0 - Male, 1 - Female)", ylab="Weight (in pounds)", col=(c("lightblue","pink")))
 
 plot(height_data, weight_data, main="Height-Weight", 
      xlab="Height (in inches)", ylab="Weight (in pounds)")
