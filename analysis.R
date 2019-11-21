@@ -16,5 +16,3 @@ plot(height_data_2, weight_data_2, main="Height-Weight",
 
 cor_pearson <- cor(height_data_2, weight_data_2, method = "pearson"); cor_pearson
 cor_spearman <- cor(height_data_2, weight_data_2, method = "spearman"); cor_spearman
-cor_kendall <- cor(height_data_2, weight_data_2, method = "kendall"); cor_kendall
-
