@@ -4,6 +4,7 @@ height_data <- data[2]
 height_data_2 <- data[,2]
 
 height_mean <- mean(height_data_2)
+height_median <- median(height_data_2)
 height_sd <- sd(height_data_2)
 height_iqr <- IQR(height_data_2)
 height_mad <- mad(height_data_2)
@@ -27,3 +28,5 @@ plot(density(height_data_2), lwd = 2, main = "Height Distribution", xlab = "",
 abline(v = fivenum(height_data_2), col = c("black", "red", "red", "red", "black"))
 
 hist(height_data_2, main = "Height Histogram", xlab="Normal Distribution", ylab="Frequency")
+abline(v=height_mean, lwd=2, lty=4, col="forestgreen")
+abline(v=height_median, lwd=2, lty= 3, col="darkred")
