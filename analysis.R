@@ -14,6 +14,7 @@ boxplot(weight_data_2 ~ gender_data_2, main="Weight-Gender",
 plot(height_data_2, weight_data_2, main="Height-Weight", 
      xlab="Height (in inches)", ylab="Weight (in pounds)")
 
-correlation <- cor(height_data_2, weight_data_2)
+cor_pearson <- cor(height_data_2, weight_data_2, method = "pearson"); cor_pearson
+cor_spearman <- cor(height_data_2, weight_data_2, method = "spearman"); cor_spearman
+cor_kendall <- cor(height_data_2, weight_data_2, method = "kendall"); cor_kendall
 
-message("There is a very strong correlation (>.9) between height and weight: ", correlation)
